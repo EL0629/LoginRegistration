@@ -1,0 +1,224 @@
+@font-face {
+  font-family: Cooper;
+  src: url(../../public/fonts/CooperBlackRegular.ttf);
+}
+
+@font-face {
+  font-family: CenturyGothic;
+  src: url(../../public/fonts/CenturyGothicRegular.ttf);
+}
+
+//LoginForm Css
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.icon-image {
+  height: 60px;
+  width: 70px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.login-form {
+  width: 560px;
+  min-height: 100vh;
+  display: block;
+  background-color: #f7f7f7;
+  padding: 173px 55px 55px 55px;
+}
+
+.login-form-title {
+  width: 100%;
+  display: block;
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 28px;
+  color: #333333;
+  line-height: 1.2;
+  font-weight: 650;
+  text-align: center;
+  display: inline-block;
+}
+
+.login-form-title img {
+  height: 60px;
+  width: 70px;
+  vertical-align: middle;
+  border-style: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.login-form-picture {
+  background-image: url("../../public/images/Cvsu-Login-Background.jpg");
+  width: calc(100% - 560px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.login-form-picture::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.p-b-login-form {
+  font-family: Cooper, sans-serif;
+  font-weight: 650;
+}
+
+.title-top {
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: -20px;
+  margin-top: -15px;
+}
+
+.title-bottom {
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.login-item {
+  margin-bottom: 10px;
+}
+
+.login-item-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 26px;
+}
+
+.limiters {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap-login {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row-reverse;
+}
+
+.login-username {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 26px;
+  margin-bottom: 15px;
+  font-family: CenturyGothic;
+}
+
+.login-password {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 26px;
+  margin-bottom: 15px;
+  font-family: CenturyGothic;
+}
+
+.login-btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  top: 10px;
+  background: #0861a3;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: CenturyGothic;
+}
+
+.forget-btn {
+  background: #0861a3;
+}
+
+.forgotPasswordLink {
+  color: #0861a3;
+  text-decoration: none;
+  font-family: CenturyGothic;
+}
+
+.forgotPasswordLink:hover {
+  font-family: CenturyGothic;
+  color: #1b95e0;
+  text-decoration-line: underline;
+}
+
+// Responsive
+@media (max-width: 992px) {
+  .login-form {
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .login-form-picture {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    width: 100%;
+  }
+  .login-form-picture {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+//Forgot Form
+.user-input {
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #555555;
+  font-family: CenturyGothic;
+}

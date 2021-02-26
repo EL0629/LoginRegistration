@@ -23,7 +23,8 @@ module.exports = function (/* ctx */) {
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
     css: [
-      'app.scss'
+      'app.scss',
+      'login.scss'
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
@@ -108,9 +109,9 @@ module.exports = function (/* ctx */) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: `LoginRegistration`,
-        short_name: `LoginRegistration`,
-        description: `Login And Registration Form using Quasar and Firebase`,
+        name: `LoginSample`,
+        short_name: `LoginSample`,
+        description: `Sample Login Using Quasar and Firebase`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -175,7 +176,7 @@ module.exports = function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'loginregistration'
+        appId: 'loginsample'
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
