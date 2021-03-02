@@ -1,6 +1,6 @@
 <template>
   <q-card style="min-width: 320px">
-    <modal-header>Forgot Password </modal-header>
+    <modal-header>Forgot Password</modal-header>
 
     <q-form @submit.prevent="submitForm">
       <q-card-section>
@@ -44,4 +44,6 @@ export default {
 };
 </script>
 
-<style lang="stylus"></style>
+<style lang="stylus">
+
+</style>

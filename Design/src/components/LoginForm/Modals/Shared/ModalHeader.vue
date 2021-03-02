@@ -1,5 +1,5 @@
 <template>
-  <q-card-section class="row">
+  <q-card-section class="row header">
     <div class="text-h6" align="center">
       <slot></slot>
     </div>
@@ -12,4 +12,8 @@
 export default {};
 </script>
 
-<style lang="stylus"></style>
+<style lang="stylus">
+.header{
+  padding-bottom: 5px;
+}
+</style>
