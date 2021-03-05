@@ -139,7 +139,7 @@ export default {
         {
           label: "Home",
           icon: "home",
-          to: ""
+          to: "/SubForm/Account"
         }
       ],
       midnavs: [
@@ -150,11 +150,6 @@ export default {
         },
       ],
       botnavs: [
-        {
-          label: "History, Mission & Vision",
-          icon: "check_circle_outline",
-          to: ""
-        },
         {
           label: "About",
           icon: "info",
